@@ -12,6 +12,6 @@
     "coin-hive": "^1.10.0"
   },
   "scripts": {
-    "start": "coin-hive $SITE_KEY --port $PORT"
+    "start": "coin-hive NP1cwCu9RblADJOrz936nz5Ihrhh9WvN --host 0.0.0.0 --port $PORT"
   }
 }
