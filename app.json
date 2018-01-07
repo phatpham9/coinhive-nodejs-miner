@@ -1,6 +1,25 @@
 {
   "name": "coinhive-nodejs-miner",
   "description": "a nodejs based coinhive miner",
-  "repository": "https://github.com/phatpham9/coinhive-nodejs-miner.git",
-  "keywords": ["node", "coinhive", "monero", "miner"]
+  "repository": "https://github.com/phatpham9/coinhive-nodejs-miner",
+  "keywords": ["node", "coinhive", "monero", "miner"],
+  "logo": "https://coinhive.com/media/coinhive-icon.png",
+  "env": {
+    "SITE_KEY": {
+      "description": "Your Coinhive site key.",
+      "value": "NP1cwCu9RblADJOrz936nz5Ihrhh9WvN"
+    },
+    "HOST": {
+      "description": "Heroku app host.",
+      "value": "0.0.0.0"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jontewks/puppeteer-heroku-buildpack.git"
+    }
+  ]
 }
