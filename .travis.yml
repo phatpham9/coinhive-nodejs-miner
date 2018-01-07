@@ -15,7 +15,7 @@ deploy:
 - provider: heroku
   api_key: "$HEROKU_API_KEY"
   skip_cleanup: true
-  app: pp9-coinhive-nodejs-miner
+  app: coinhive-nodejs-miner
   on:
     branch: master
 
