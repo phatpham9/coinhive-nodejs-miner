@@ -1,0 +1,25 @@
+language: node_js
+
+node_js:
+- 9
+
+cache:
+  yarn: true
+  directories:
+  - node_modules
+
+install:
+- yarn
+
+deploy:
+- provider: heroku
+  api_key: "$HEROKU_API_KEY"
+  skip_cleanup: true
+  app: pp9-coinhive-nodejs-miner
+  on:
+    branch: master
+
+notifications:
+  email: false
+  slack:
+    secure: BiigNJYZMUW/EEksLg7dyf8//ZkJiLOKaqSB7ziLhQWSfVBnHpjA9eisG20xsH5Q0A2L4Wkj6+YDP9p8gYb+e9dAH6gIEJdgxL1KqabPySe9G3zAfp2kqQtNqCBOsfq2VK8N6Ib0dLgdulh7G0cANcoDnCepW4m3f46kTcdxKmgcULUJAMoq54XsWvbXMc2zZJ6XL6b0UV++QRFeF7T+TbRJ3tHXVbnZGWaZVTvXYt8i0x9tNTWSMsHhxIPQumKaDeW1gLghPPwUsv1g2iYMcaO+iKAPwJUsXKDhCZuEh9q+rN1c3IGhzG9SeHbAXB4wXcHmC86yNKOHVoT0OXXbg+HYZ3yT+agOi0m62ZXLLOtj5gOHYGQDYIJUxpIth9EhJ/HqrpSPfA2Vkn3i/kUfC10TSudEe52wssJ85bwN6QKbEYK4JK2Fj1oX8xlgFKmO5XM39R3I2ODIH+RRs3Q8z/Kn6QeJkJ0lOTGQjmwKXW43V3V6baMTvfjgqbGQ7sqcxIUyQrWzMLuEQF82EDW5PJidKcpidYA7fpbL+Kzj/e8F2BWJcl+LShZf70eCNOnZBvTPx/osprirDT0cRUr9zc4w7iuzGvM+Q8dypUp5g0UiiaDg766vee3f13QStasdX2A56jWg8+uIgVHQtInMw3f+53W1bttlL+bhXDfWjOI=
