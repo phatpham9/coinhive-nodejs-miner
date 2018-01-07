@@ -1,0 +1,6 @@
+{
+  "name": "coinhive-nodejs-miner",
+  "description": "a nodejs based coinhive miner",
+  "repository": "https://github.com/phatpham9/coinhive-nodejs-miner.git",
+  "keywords": ["node", "coinhive", "monero", "miner"]
+}
