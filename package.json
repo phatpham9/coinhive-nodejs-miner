@@ -12,6 +12,6 @@
     "coin-hive": "^1.10.0"
   },
   "scripts": {
-    "start": "coin-hive $KEY"
+    "start": "coin-hive $COINHIVE_SITE_KEY"
   }
 }
