@@ -11,6 +11,9 @@ cache:
 install:
 - yarn
 
+script:
+- cat package.json | sed s/\$SITE_KEY/$SITE_KEY/ > package.json
+
 deploy:
 - provider: heroku
   api_key: "$HEROKU_API_KEY"
