@@ -1,2 +1,2 @@
-# monero-miner
-a nodejs based monero miner
+# coinhive-nodejs-miner
+a nodejs based coinhive miner
