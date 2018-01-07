@@ -1,8 +1,8 @@
 {
   "name": "coinhive-nodejs-miner",
   "version": "1.0.0",
-  "description": "a nodejs based coinhive miner",
-  "repository": "git@github.com:phatpham9/monero-miner.git",
+  "description": "A nodejs based coinhive miner",
+  "repository": "https://github.com/phatpham9/coinhive-nodejs-miner",
   "author": "Phat Pham <phatpham9@gmail.com>",
   "license": "MIT",
   "engines": {
