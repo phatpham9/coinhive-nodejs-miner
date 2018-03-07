@@ -6,12 +6,12 @@
   "author": "Phat Pham <phatpham9@gmail.com>",
   "license": "MIT",
   "engines": {
-    "node": ">=9"
+    "node": ">=8"
   },
   "dependencies": {
     "coin-hive": "^1.10.0"
   },
   "scripts": {
-    "start": "coin-hive $SITE_KEY --host $HOST --port $PORT"
+    "start": "coin-hive $SITE_KEY"
   }
 }

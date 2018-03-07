@@ -8,15 +8,29 @@ Create your own monero miner in just 1-click
 
 ### Create your own miner in a minute
 
-#### Deploy to Heroku
+#### Running on local
 
-Click the button below and replace the `SITE_KEY` with your Coinhive site key. That's it!
+Make sure NodeJS >=8 and Yarn are installed on your machine and replace the `SITE_KEY` with your Coinhive site key in the command below.
+
+```bash
+export SITE_KEY=NP1cwCu9RblADJOrz936nz5Ihrhh9WvN
+yarn && yarn start
+```
+
+#### 1-Click deploy to Heroku
+
+Click the button below and replace the `SITE_KEY` with your Coinhive site key.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 #### Using Docker Image
 
-Comming soon...
+Make sure Docker is installed on your machine and replace the `SITE_KEY` with your Coinhive site key in the command below.
+
+```bash
+docker pull phatpham9/coinhive-nodejs-miner
+docker run -e SITE_KEY=NP1cwCu9RblADJOrz936nz5Ihrhh9WvN phatpham9/coinhive-nodejs-miner
+```
 
 ### Author
 

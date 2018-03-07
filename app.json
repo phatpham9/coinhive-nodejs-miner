@@ -8,10 +8,6 @@
     "SITE_KEY": {
       "description": "Your Coinhive site key.",
       "value": "NP1cwCu9RblADJOrz936nz5Ihrhh9WvN"
-    },
-    "HOST": {
-      "description": "Heroku app host.",
-      "value": "0.0.0.0"
     }
   },
   "buildpacks": [

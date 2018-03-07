@@ -1,23 +1,30 @@
+sudo: required
+
 language: node_js
 
 node_js:
+- 8
 - 9
+
+env:
+- DOCKER_REPO=phatpham9/coinhive-nodejs-miner
+
+services:
+- docker
+
+install:
+- yarn
+
+script:
+- docker build -t "$DOCKER_REPO" .
+- if [ ! -z "$TRAVIS_TAG" ]; then docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD";
+  for TAG in {"$TRAVIS_TAG",latest}; do docker tag "$DOCKER_REPO" "$DOCKER_REPO":"$TAG";
+  docker push "$DOCKER_REPO":"$TAG"; done fi
 
 cache:
   yarn: true
   directories:
   - node_modules
-
-install:
-- yarn
-
-# deploy:
-# - provider: heroku
-#   api_key: "$HEROKU_API_KEY"
-#   skip_cleanup: true
-#   app: coinhive-nodejs-miner
-#   on:
-#     branch: master
 
 notifications:
   email: false
