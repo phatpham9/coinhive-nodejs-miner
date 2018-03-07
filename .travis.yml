@@ -16,9 +16,11 @@ install:
 
 script:
 - docker build -t "$DOCKER_REPO" .
-- if [ "$TRAVIS_BRANCH" == "master" ]; then docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD";
-  for TAG in {latest}; do docker tag "$DOCKER_REPO" "$DOCKER_REPO":"$TAG";
-  docker push "$DOCKER_REPO":"$TAG"; done fi
+- if [ "$TRAVIS_BRANCH" == "master" ]; then
+    docker login -u "$DOCKER_USERNAME" --password-stdin "$DOCKER_PASSWORD";
+    docker tag "$DOCKER_REPO" "$DOCKER_REPO";
+    docker push "$DOCKER_REPO";
+  fi
 
 cache:
   yarn: true
