@@ -1,6 +1,6 @@
 # coinhive-nodejs-miner
 
-A nodejs based coinhive miner
+Create your own monero miner in just 1-click
 
 [![Package Version](https://img.shields.io/github/package-json/v/phatpham9/coinhive-nodejs-miner.svg)]()
 [![Travis](https://img.shields.io/travis/phatpham9/coinhive-nodejs-miner.svg)](https://travis-ci.org/phatpham9/coinhive-nodejs-miner)

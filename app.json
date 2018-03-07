@@ -1,6 +1,6 @@
 {
   "name": "coinhive-nodejs-miner",
-  "description": "a nodejs based coinhive miner",
+  "description": "Create your own monero miner in just 1-click",
   "repository": "https://github.com/phatpham9/coinhive-nodejs-miner",
   "keywords": ["node", "coinhive", "monero", "miner"],
   "logo": "https://coinhive.com/media/coinhive-icon.png",

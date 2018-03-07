@@ -1,7 +1,7 @@
 {
   "name": "coinhive-nodejs-miner",
   "version": "1.0.0",
-  "description": "A nodejs based coinhive miner",
+  "description": "Create your own monero miner in just 1-click",
   "repository": "https://github.com/phatpham9/coinhive-nodejs-miner",
   "author": "Phat Pham <phatpham9@gmail.com>",
   "license": "MIT",

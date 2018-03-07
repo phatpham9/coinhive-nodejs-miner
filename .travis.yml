@@ -11,13 +11,13 @@ cache:
 install:
 - yarn
 
-deploy:
-- provider: heroku
-  api_key: "$HEROKU_API_KEY"
-  skip_cleanup: true
-  app: coinhive-nodejs-miner
-  on:
-    branch: master
+# deploy:
+# - provider: heroku
+#   api_key: "$HEROKU_API_KEY"
+#   skip_cleanup: true
+#   app: coinhive-nodejs-miner
+#   on:
+#     branch: master
 
 notifications:
   email: false
